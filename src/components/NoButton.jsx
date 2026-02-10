@@ -1,11 +1,13 @@
 import { useState } from "react";
-import useTextStore from "../store/textStores";
+import { useTextStore, useIsYesStore } from "../store/textStores";
 
 const NoButton = () => {
   const [position, setPosition] = useState({ top: "60%", left: "55%" });
   const [size, Setsize] = useState({ height: 50, width: 70, textSize: "16px" });
 
-  const { initialText, updateInitialText } = useTextStore();
+  const { updateInitialText } = useTextStore();
+  const { isYes } = useIsYesStore();
+
   const moveButton = () => {
     updateInitialText();
     const newX = Math.random() * (window.innerWidth - 150);
@@ -26,26 +28,27 @@ const NoButton = () => {
 
   return (
     <div>
-      <h1 className="textFont">{initialText}</h1>
-      <button
-        onMouseEnter={moveButton}
-        style={{
-          position: "absolute",
-          top: position.top,
-          left: position.left,
-          transition: "all 0.2s ease-out",
-          fontSize: size.textSize,
-          cursor: "pointer",
-          color: "white",
-          background: "red",
-          border: 0,
-          height: size.height,
-          width: size.width,
-          borderRadius: 10,
-        }}
-      >
-        NO
-      </button>
+      {!isYes && (
+        <button
+          onMouseEnter={moveButton}
+          style={{
+            position: "absolute",
+            top: position.top,
+            left: position.left,
+            transition: "all 0.2s ease-out",
+            fontSize: size.textSize,
+            cursor: "pointer",
+            color: "white",
+            background: "red",
+            border: 0,
+            height: size.height,
+            width: size.width,
+            borderRadius: 10,
+          }}
+        >
+          NO
+        </button>
+      )}
     </div>
   );
 };
