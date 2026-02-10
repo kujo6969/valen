@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/valen/static/css/main.e6c13ad2.css",
-    "main.js": "/valen/static/js/main.06b3957d.js",
+    "main.css": "/valen/static/css/main.e8bc73b9.css",
+    "main.js": "/valen/static/js/main.b3a05867.js",
     "static/js/453.d77881a6.chunk.js": "/valen/static/js/453.d77881a6.chunk.js",
+    "static/media/Valentine.ttf": "/valen/static/media/Valentine.167367b6f38b02039da0.ttf",
     "index.html": "/valen/index.html",
-    "main.e6c13ad2.css.map": "/valen/static/css/main.e6c13ad2.css.map",
-    "main.06b3957d.js.map": "/valen/static/js/main.06b3957d.js.map",
+    "main.e8bc73b9.css.map": "/valen/static/css/main.e8bc73b9.css.map",
+    "main.b3a05867.js.map": "/valen/static/js/main.b3a05867.js.map",
     "453.d77881a6.chunk.js.map": "/valen/static/js/453.d77881a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.06b3957d.js"
+    "static/css/main.e8bc73b9.css",
+    "static/js/main.b3a05867.js"
   ]
 }
