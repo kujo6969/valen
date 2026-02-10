@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kujo6969/valen/static/css/main.e6c13ad2.css",
+    "main.js": "/kujo6969/valen/static/js/main.20e97737.js",
+    "static/js/453.d77881a6.chunk.js": "/kujo6969/valen/static/js/453.d77881a6.chunk.js",
+    "index.html": "/kujo6969/valen/index.html",
+    "main.e6c13ad2.css.map": "/kujo6969/valen/static/css/main.e6c13ad2.css.map",
+    "main.20e97737.js.map": "/kujo6969/valen/static/js/main.20e97737.js.map",
+    "453.d77881a6.chunk.js.map": "/kujo6969/valen/static/js/453.d77881a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.20e97737.js"
+  ]
+}
