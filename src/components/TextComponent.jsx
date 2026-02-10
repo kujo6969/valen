@@ -1,14 +1,15 @@
-import { useTextStore } from "../store/textStores";
+import { useTextStore, useIsYesStore } from "../store/textStores";
 import Shuffle from "../gsap/Shuffle";
 
 const TextComponent = () => {
   const { initialText } = useTextStore();
+  const { isYes } = useIsYesStore();
 
   return (
-    <div style={{color: "#fff"} }>
+    <div style={{ color: "#fff" }}>
       <Shuffle
-        key={initialText}
-        text={initialText}
+        key={isYes ? "YEEEEEEEEEEEEEEEEEEEEEY!!"  :initialText}
+        text={isYes ? "YEEEEEEEEEEEEEEEEEEEEEY!!"  :initialText}
         shuffleDirection="right"
         duration={0.35}
         animationMode="evenodd"
