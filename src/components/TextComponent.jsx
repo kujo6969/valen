@@ -6,10 +6,18 @@ const TextComponent = () => {
   const { isYes } = useIsYesStore();
 
   return (
-    <div style={{ color: "#fff" }}>
+    <div
+      style={{
+        color: "#fff",
+        WebkitTextStroke: "2px",
+        WebkitTextStrokeColor: "#FF8896",
+        border: "10px",
+        borderColor: "#000",
+      }}
+    >
       <Shuffle
-        key={isYes ? "YEEEEEEEEEEEEEEEEEEEEEY!!"  :initialText}
-        text={isYes ? "YEEEEEEEEEEEEEEEEEEEEEY!!"  :initialText}
+        key={isYes ? "YEY!! I LOVE YOU!🥰🥰🥰" : initialText}
+        text={isYes ? "YEY!! I LOVE YOU!🥰🥰🥰" : initialText}
         shuffleDirection="right"
         duration={0.35}
         animationMode="evenodd"
@@ -21,7 +29,7 @@ const TextComponent = () => {
         respectReducedMotion={true}
         loop={false}
         loopDelay={0}
-        className="textFont"
+        style={{ fontFamily: "Valentine14" }}
       />
     </div>
   );

@@ -28,10 +28,6 @@ code {
   font-weight: 400;
 }
 
-.textFont {
-  font-family: "Valentine29";
-  font-size: 8rem;
-}
 .hover-button:hover {
   transform: scale(10);
   cursor: pointer;

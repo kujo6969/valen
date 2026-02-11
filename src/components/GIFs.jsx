@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useIsYesStore } from "../store/textStores";
-const GIF_COUNT = 5;
+const GIF_COUNT = 8;
 
 export default function GIFs() {
   const { isYes } = useIsYesStore();
@@ -10,8 +10,8 @@ export default function GIFs() {
     if (isYes) {
       const generated = Array.from({ length: GIF_COUNT }).map((_, i) => ({
         id: i + 1,
-        top: Math.random() * 80 + 5,
-        left: Math.random() * 80 + 5,
+        top: Math.random() * 80 + 8,
+        left: Math.random() * 80 + 8,
         delay: Math.random() * 0.4,
       }));
       setGifs(generated);

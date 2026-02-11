@@ -19,7 +19,7 @@ function App() {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        gap: "1rem",
+        gap: "5rem",
       }}
     >
       <div
@@ -33,10 +33,10 @@ function App() {
         }}
       >
         <Silk
-          speed={5}
+          speed={10}
           scale={1}
-          color="#D02752"
-          noiseIntensity={1.5}
+          color="#C00000"
+          noiseIntensity={1}
           rotation={0}
           style={{
             width: "100%",
@@ -47,8 +47,17 @@ function App() {
 
       {/* Foreground content */}
       <TextComponent />
-      <YesButton />
-      <NoButton />
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          gap: 100,
+        }}
+      >
+        <YesButton />
+        <NoButton />
+      </div>
       {isYes && <Confetti wind={0.01} numberOfPieces={300} />}
       {isYes && <GIFs />}
     </div>

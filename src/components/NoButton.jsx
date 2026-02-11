@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useTextStore, useIsYesStore } from "../store/textStores";
 
 const NoButton = () => {
-  const [position, setPosition] = useState({ top: "60%", left: "55%" });
+  const [position, setPosition] = useState({ top: "default", left: "default" });
   const [size, Setsize] = useState({ height: 50, width: 70, textSize: "16px" });
 
   const { updateInitialText } = useTextStore();
@@ -39,7 +39,7 @@ const NoButton = () => {
             fontSize: size.textSize,
             cursor: "pointer",
             color: "white",
-            background: "red",
+            background: "#FF0000",
             border: 0,
             height: size.height,
             width: size.width,
